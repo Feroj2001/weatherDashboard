@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
@@ -16,49 +17,49 @@
         <div class="card-body">
           <blockquote class="blockquote mb-0">
             <h1>Search for a City:</h1>
-            <input type="sybmit" class="search">
-            <button id="searchButton" class="search">Search</button>
+            <input type="text" id="search" class="search">
+            <button id="searchButton" class="button">Search</button>
           </blockquote>
           <div id="searchResults" class="locationList">
-            <p>Parkcity</p>
+            <!-- <p>Parkcity</p> -->
           </div>
         </div>
       </div>
     <div class="card">
         <div class="result-card">
           
-            <h1 class="city-name" id="topHeader"></h1>
-            <div>
-                Temperature
+            <!-- <h1 class="city-name" id="topHeader"></h1>
+            <div id="temperature">
+                
             </div>
-            <div>
-                Humidity
+            <div id="name"></div>
+            <div id="windSpeed">
+                
             </div>
-            <div>
-                Wind SPeed
-            </div>
-            <div>
-                UV index
-            </div>
+            <div id="uvIndex">
+                
+            </div> -->
 
           </div>
         </div>
-    <div class="forecast-card">
+    <div class="card">
         <div class="dayForecast-card">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div>1</div>
+                </div>
+                <div class="col-lg-2">
+                    <div>2</div>
+                </div>
+                <div class="col-lg-2">
+                    <div>3</div>
+                </div>
+                <div class="col-lg-2">
+                    <div>4</div>
+                </div>
+            </div>
           
-            <h1 class="city-name" id="topHeader"></h1>
-            <div>
-                Temperature
-            </div>
-            <div>
-                Humidity
-            </div>
-            <div>
-                Wind SPeed
-            </div>
-            <div>
-                UV index
-            </div>
+            
 
           </div>
         </div>
@@ -87,5 +88,6 @@
             UV index
         </div>
       </div> -->
+      <script src="index.js"></script>
 </body>
 </html>
