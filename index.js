@@ -10,20 +10,39 @@
     }).then(function (response) {
         console.log(response);
 
-        var nameDiv = $("<div></div>")
+        
+        // uvIndex
+
+        $(".result-card").add("<div></div>")
+        var uvIndex = $("<p></p>").addClass("uvIndex").text("UV Index: " + response.coord.lat)
+
+        $(".result-card").prepend(uvIndex)
+    
+
+         // wind speed
+         $(".result-card").add("<div></div>")
+         var windSpeed = $("<p></p>").text("WindSpeed: " +response.wind.speed + " " + "MPH")
+ 
+         $(".result-card").prepend(windSpeed)
+
+        // humidity
+
+        var humidityDiv = $("<div></div>")
+
+        var getHumidity = response.main.humidity;
+
+        var answerr = $("<p>").text("Humidity: " + getHumidity)
+        $(".result-card").prepend(answerr)
+        
+        // Name
+        var nameDiv = $("<div></div>").addClass("nameDiv")
+        // $(".result-card").add("<div></div>").addClass("nameDiv")
 
         var getName = response.name;
-
-        var poppy = $("<p>").text("Name: " + getName)
+    
+        var poppy = $("<p>").addClass("nameDiv").text("Name: " + getName)
         $(".result-card").prepend(poppy);
-        
-    //     var nameValue = response.name;
-    //     var temperatureValue = response.main.temperature;
-    //     console.log(nameValue)
 
-    //    var valueName = document.createElement("div")
-    //    valueName.innerHTML = nameValue;
-    //    document.getElementById("#name").appendChild(valueName)
     });
    })
 

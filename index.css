@@ -16,16 +16,28 @@
     font-size: 2em;
 }
 
+/* result card */
+
+.nameDiv {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.uvIndex {
+    color: red;
+}
+
 /* search for city container */
 .card {
     width: 47%;
     float: left;
-    padding: 50px;
+    padding: 40px;
     margin: 20px;
 }
 
 .dayForecast-card {
     text-align: center;
+    float: left;
 }
 
 /* .card-body {
